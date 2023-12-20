@@ -6,7 +6,7 @@ return(
     <>
     <div className=" w-screen h-screen" >
 
-        <h1 className=" text-5xl mt-[400px] text-center"><HighlightText text={"Welcome ngkfnkf"}/></h1>
+        <h1 className=" text-5xl mt-[400px] text-center"><HighlightText text={"Welcome"}/></h1>
     </div>
     </>
 )

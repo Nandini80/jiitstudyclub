@@ -7,7 +7,6 @@ function Dashboard2() {
     { id: 1, title: 'Card 1', subtitle: 'Subtitle 1', content: 'Content for card 1' },
     { id: 2, title: 'Card 2', subtitle: 'Subtitle 2', content: 'Content for card 2' },
     { id: 3, title: 'Card 3', subtitle: 'Subtitle 3', content: 'Content for card 3' },
-    // Add more data as needed
   ];
   return (
     <div>

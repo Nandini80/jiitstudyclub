@@ -5,7 +5,7 @@ import "./index.css";
 
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-import rootReducer from "./Components/pages/Dashboard/reducer";
+import rootReducer from "./Components/reducer";
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter } from "react-router-dom";
 

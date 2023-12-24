@@ -1,8 +1,8 @@
 import { Route,Routes } from 'react-router';
 import './App.css'
-import { Navbar } from './Components/pages/Dashboard/common/Navbar';
+import { Navbar} from "../src/Components/common/Navbar"
 import Dashboard from './Components/pages/Dashboard/Dashboard';
-import { Homepage } from './Components/Homepage/Homepage';
+import { Homepage } from './Components/pages/Homepage/Homepage';
 import { Login } from './Components/Auth/Login';
 import { Signup } from './Components/Auth/Signup';
 

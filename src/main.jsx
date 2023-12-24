@@ -8,7 +8,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "./Components/reducer";
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter } from "react-router-dom";
-
+import SideBar from './Components/pages/Dashboard/SideBar';
 
 const store= configureStore({
     reducer:rootReducer
@@ -19,11 +19,8 @@ root.render(
     <React.StrictMode>
          <BrowserRouter>
         <Provider store={store}>
-      
        <App />
          <Toaster/>
-
-        
         </Provider>
         </BrowserRouter>
        

@@ -70,8 +70,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-end',
 }));
 
-
-
 const bull = (
   <Box
     component="span"

@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
+import { setSignupData } from "../reducer/slices/authSlice";
+import { sendOtp } from "../../services/operations/authApi";
 
 export const Signup =()=>{  
     
@@ -24,10 +26,36 @@ export const Signup =()=>{
     }))
   }
 
+  const handleOnSubmit = (e) => {
+    e.preventDefault()
+
+    if (password !== confirmPassword) {
+      toast.error("Passwords Do Not Match")
+      return
+    }
+    const signupData = formData
+
+    // Setting signup data to state
+    // To be used after otp verification
+    dispatch(setSignupData(signupData))
+    // Send OTP to user for verification
+    dispatch(sendOtp(formData.email, navigate))
+
+    // Reset
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      password: "",
+      confirmPassword: "",
+    })
+   
+  }
+
 
 return(
     <>
-    <div className=" max-w-[50vw]  bg-richblack-900 p-4 mt-[200px] ml-[200px] ">
+    <div onSubmit={handleOnSubmit} className=" max-w-[50vw]  bg-richblack-900 p-4 mt-[200px] ml-[200px] ">
       {/* Tab */}
       {/* <Tab tabData={tabData} field={accountType} setField={setAccountType} /> */}
       {/* Form */}

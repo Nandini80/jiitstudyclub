@@ -1,6 +1,6 @@
 .Sidebar
 {
-    height: 100%;
+    height: 100vh;
     width: 17rem;
     background-color: #2F4050;
 } 
@@ -15,7 +15,7 @@
 .SidebarList .row
 {
   width: 100%;
-  height: 60px;
+  height: 70px;
   /* border: 1px solid black; */
   list-style-type: none;
   margin: 0;

@@ -9,12 +9,12 @@ function Dashboard2() {
     { id: 3, title: 'Card 3', subtitle: 'Subtitle 3', content: 'Content for card 3' },
   ];
   return (
-    <div>
+    <div className='flex'>
       <div style={{width:"17rem"}}>
       <SideBar />
       </div>
       <div style={{float:"right"}}>
-        <Cards />
+        <Cards/>
       </div>
         {cardData.map((card) => (
         <Cards

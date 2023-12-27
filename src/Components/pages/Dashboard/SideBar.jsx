@@ -8,7 +8,7 @@ function SideBar() {
         <ul className='SidebarList'>
        {SideBarData.map((val,key)=>{
         return(
-            <li key={key} 
+            <li  key={key} 
             onClick={()=>{window.location.pathname = val.link}} 
             id={window.location.pathname==val.link ? "active":""} 
             className='row'> 
